@@ -1,4 +1,3 @@
-
 # My Linux Desktop Configurations
 
 I'm publishing my hyprland and waybar configurations.

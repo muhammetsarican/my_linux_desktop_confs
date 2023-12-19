@@ -43,6 +43,8 @@ Finally reboot your desktop. Congrats 🎉
 ## Dependencies for some functions work
 
 ```bash
+hyprland
+waybar
 hyprpaper
 wl-clipboard
 konsole

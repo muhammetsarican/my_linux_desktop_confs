@@ -52,6 +52,7 @@ cliphist
 blueman
 rofi
 grim
+slurp
 wireplumber
 xsensors
 btop

@@ -61,6 +61,7 @@ pavucontrol
 pulseaudio
 gsimplecal
 cherrytree
+rofi-emoji
 ```
 ## Feedback
 

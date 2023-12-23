@@ -52,14 +52,13 @@ cliphist
 blueman
 rofi
 grim
-wpctl
+wireplumber
 xsensors
 btop
 brightnessctl
 wlogout
 pavucontrol
 pulseaudio
-pactl
 gsimplecal
 cherrytree
 ```

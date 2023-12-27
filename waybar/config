@@ -96,13 +96,15 @@
             "",
             ""
         ],
-        "max-length": 15,
+        "max-length": 25,
         "min-length": 7,
         "on-click": "xsensors"
     },
     "memory": {
         "interval": 10,
         "format": "☰ {used:0.2f} / {total:0.0f} GB",
+        "max-length": 25,
+        "min-length": 7,
         "on-click": "konsole -e btop"
     },
     "battery": {
@@ -113,8 +115,10 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "max-length": 25,
+        "min-length": 7,
         "format-icons": [
             "",
             "",
@@ -155,6 +159,8 @@
             "",
             ""
         ],
+        "max-length": 25,
+        "min-length": 7,
         "on-scroll-down": "brightnessctl s 5%-",
         "on-scroll-up": "brightnessctl s +5%"
     },
@@ -192,8 +198,8 @@
         "max-length": 20,
         "format-icons": {
             "spotify": "",
-            //"default": "🎜"
-            "default": " 🎵"
+            "default": "🎜"
+            //"default": " 🎵"
         },
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
@@ -201,7 +207,7 @@
     },
     "custom/power": {
         "format": "",
-        "tooltip": false,
+        "tooltip": false,       
         "on-click": "wlogout"
     },
     "clock": {

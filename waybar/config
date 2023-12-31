@@ -4,7 +4,7 @@
     // -------------------------------------------------------------------------
     "layer": "top",
     "position": "top",
-    "height": 10,
+    "height": 33,
     /*"margin-left": 10,
     "margin-bottom": 0,
     "margin-right": 10,*/
@@ -89,22 +89,20 @@
         //"hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
         "critical-threshold": 80,
         // "format-critical": " {temperatureC}°C",
-        "format-critical": "  {temperatureC}°C",
-        "format": "{icon}  {temperatureC}°C",
+        "format-critical": " {temperatureC}°C",
+        "format": "{icon} {temperatureC}°C",
         "format-icons": [
             "",
             "",
             ""
         ],
-        "max-length": 25,
-        "min-length": 7,
+        "max-length": 15,
+        "min-length": 5,
         "on-click": "xsensors"
     },
     "memory": {
         "interval": 10,
-        "format": "☰ {used:0.2f} / {total:0.0f} GB",
-        "max-length": 25,
-        "min-length": 7,
+        "format": "☰ {used:0.2f}/{total:0.0f} GB",
         "on-click": "konsole -e btop"
     },
     "battery": {
@@ -115,10 +113,8 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
-        "format-charging": "  {capacity}%",
-        "format-plugged": "  {capacity}%",
-        "max-length": 25,
-        "min-length": 7,
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
         "format-icons": [
             "",
             "",
@@ -129,7 +125,7 @@
     },
     "network": {
         "format-wifi": " {essid} ({signalStrength}%)",
-        "format-ethernet": "  {bandwidthDownBytes}",
+        "format-ethernet": " {bandwidthDownBytes}",
         "interval": 1,
         "format-linked": "{ifname} (No IP) ",
         "format": "",
@@ -159,8 +155,6 @@
             "",
             ""
         ],
-        "max-length": 25,
-        "min-length": 7,
         "on-scroll-down": "brightnessctl s 5%-",
         "on-scroll-up": "brightnessctl s +5%"
     },
@@ -199,7 +193,6 @@
         "format-icons": {
             "spotify": "",
             "default": "🎜"
-            //"default": " 🎵"
         },
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
@@ -207,7 +200,9 @@
     },
     "custom/power": {
         "format": "",
-        "tooltip": false,       
+        "tooltip": false,
+        "min-length":3,
+        "max-length":5,
         "on-click": "wlogout"
     },
     "clock": {
@@ -285,7 +280,7 @@
         }
     },
     "pulseaudio": {
-        "scroll-step": 2, // %, can be a float
+        "scroll-step": 5, // %, can be a float
         //"format": "{icon} {volume}% {format_source}",
         "format": "{icon} {volume}%",
         "format-bluetooth": " {volume}%",
@@ -294,7 +289,7 @@
         "ignored-sinks": [
             "Easy Effects Sink"
         ],
-        "max-volume": 100,
+        "max-volume": 150,
         "format-source": "{volume}% ",
         //"format-source-muted": "",
         //"format-source": "",
@@ -313,8 +308,9 @@
             ]
         },
         "on-click": "pavucontrol",
+        "on-click-right": "blueberry",
         "on-click-middle": "pulseaudio-control --node-blacklist 'easyeffects_sink' next-node",
-        "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+        //"on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
     },
     "tray": {
         "icon-size": 15,

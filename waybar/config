@@ -3,6 +3,7 @@
     // Global configuration
     // -------------------------------------------------------------------------
     "layer": "top",
+    //"mode": "hide",
     "position": "top",
     "height": 33,
     /*"margin-left": 10,
@@ -124,7 +125,8 @@
         ]
     },
     "network": {
-        "format-wifi": " {essid} ({signalStrength}%)",
+        // "format-wifi": " {essid} ({signalStrength}%)",
+        "format-wifi": " {bandwidthDownBytes} ({signalStrength}%)",
         "format-ethernet": " {bandwidthDownBytes}",
         "interval": 1,
         "format-linked": "{ifname} (No IP) ",
@@ -308,7 +310,7 @@
             ]
         },
         "on-click": "pavucontrol",
-        "on-click-right": "blueberry",
+        "on-click-right": "blueman-manager",
         "on-click-middle": "pulseaudio-control --node-blacklist 'easyeffects_sink' next-node",
         //"on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
     },

@@ -63,6 +63,9 @@ pulseaudio
 gsimplecal
 cherrytree
 rofi-emoji
+tesseract
+hyprpicker.git(yay)
+xdg-user-dirs
 ```
 ## Feedback
 

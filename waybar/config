@@ -13,7 +13,6 @@
     "modules-left": [
         //"custom/rofi",
         "hyprland/workspaces",
-        "keyboard-state",
         "temperature",
         "cpu",
         "memory"
@@ -23,6 +22,7 @@
     "modules-center": [
         "battery",
         "clock#3",
+        "keyboard-state",
         "backlight"
         //"custom/pacman"
         //"custom/weather"
@@ -45,9 +45,13 @@
         "capslock": true,
         "format": "{name} {icon} ",
         "format-icons": {
-            "locked": " ",
-            "unlocked": ""
+            // "locked": "❌",
+            // "unlocked": "",
+            "locked": "",
+            "unlocked": "❌",
         },
+        "max-length": 15,
+        "min-length": 5,
     },
     "custom/sp1": {
         "format": "| ",
@@ -104,7 +108,7 @@
     "memory": {
         "interval": 10,
         "format": "☰ {used:0.2f}/{total:0.0f} GB",
-        "on-click": "konsole -e btop"
+        "on-click": "konsole -e htop"
     },
     "battery": {
         "interval": 2,

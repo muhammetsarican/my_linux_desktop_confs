@@ -64,8 +64,9 @@ gsimplecal
 cherrytree
 rofi-emoji
 tesseract
-hyprpicker.git(yay)
+hyprpicker-git (AUR)
 xdg-user-dirs
+dunst
 ```
 ## Feedback
 

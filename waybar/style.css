@@ -87,6 +87,7 @@ window#waybar.solo {
 #sway-scratchpad,
 #mpd,
 #custom-media,
+#keyboard-state,
 #workspaces {
     padding: 0 10px;
     margin: 6px 3px;
@@ -246,19 +247,17 @@ label:focus {
 }
 
 #keyboard-state {
-    background-color: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
+    /* background-color: #97e1ad;*/
+    background-color: #F67400;
+    color: #f8f8f2;
 }
 
-#keyboard-state > label {
+/*#keyboard-state > label {
     padding: 0 5px;
-}
+}*/
 
 #keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 #custom-weather {

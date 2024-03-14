@@ -63,10 +63,17 @@ pulseaudio
 gsimplecal
 cherrytree
 rofi-emoji
+ttf-apple-emoji (AUR)
 tesseract
 hyprpicker-git (AUR)
 xdg-user-dirs
 dunst
+```
+## Some Solutions
+
+If you get **EACCES Permission denied** warning at your waybar, you can run this code:
+```bash
+sudo usermod -aG input <user_name>
 ```
 ## Feedback
 

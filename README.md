@@ -68,6 +68,7 @@ tesseract
 hyprpicker-git (AUR)
 xdg-user-dirs
 dunst
+electron25
 ```
 ## Some Solutions
 

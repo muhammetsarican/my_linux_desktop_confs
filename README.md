@@ -6,7 +6,7 @@ I'm publishing my hyprland and waybar configurations.
 
 ## Screenshots
 
-![App Screenshot](https://i.imgur.com/f3veigq.png)
+![App Screenshot](https://github.com/muhammetsarican/my_linux_desktop_confs/blob/main/project.png)
 
 
 ## Features

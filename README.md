@@ -57,7 +57,7 @@ wireplumber
 xsensors
 btop
 brightnessctl
-wlogout
+wlogout-git
 pavucontrol
 pulseaudio
 gsimplecal

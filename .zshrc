@@ -20,7 +20,7 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 
 # Aliases
 alias desktop='cd /mnt/hdd/Desktop/'
@@ -32,3 +32,8 @@ alias base='source /usr/bin/python-env/base/bin/activate'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export DISPLAY=:0.0
+# export DISPLAY="192.168.1.5:0"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

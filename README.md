@@ -63,7 +63,8 @@ pulseaudio
 gsimplecal
 cherrytree
 rofi-emoji
-ttf-apple-emoji (AUR)
+noto-fonts-emoji
+ttf-hack-nerd
 tesseract
 hyprpicker-git (AUR)
 xdg-user-dirs
@@ -76,6 +77,9 @@ If you get **EACCES Permission denied** warning at your waybar, you can run this
 ```bash
 sudo usermod -aG input <user_name>
 ```
+
+If you not see icons on your terminal you can change the font to *Hack Nerd Font* or *MesloLGS NF*.
+
 ## Feedback
 
 If you have any feedback, please reach out to us at [muhammetsarican.com](https://muhammetsarican.com/contact)

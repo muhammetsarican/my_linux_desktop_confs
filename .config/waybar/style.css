@@ -120,6 +120,7 @@ window#waybar.solo {
 }
 
 #clock {
+    margin: 5px 6px;
     background-color: #ffffff;
     color: #111e19;
     font-size: 15px;

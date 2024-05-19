@@ -37,6 +37,12 @@ Replace configuration files with yours
   mv . ~/.config/
 ```
 
+At last, you have to define config file for ly display manager
+
+```
+	ly-dm --config ~/.config/ly/config.ini
+```
+
 Finally reboot your desktop. Congrats 🎉
 
 
@@ -45,6 +51,7 @@ Finally reboot your desktop. Congrats 🎉
 ```bash
 hyprland
 waybar
+ly
 hyprpaper
 wl-clipboard
 konsole

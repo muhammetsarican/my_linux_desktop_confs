@@ -198,7 +198,7 @@
         "max-length": 20,
         "format-icons": {
             "spotify": "",
-            "default": "🎜"
+            "default": " "
         },
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder

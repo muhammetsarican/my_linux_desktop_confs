@@ -40,7 +40,7 @@ Replace configuration files with yours
 At last, you have to define config file for ly display manager
 
 ```
-	ly-dm --config ~/.config/ly/config.ini
+  ly-dm --config ~/.config/ly/config.ini
 ```
 
 Finally reboot your desktop. Congrats 🎉
